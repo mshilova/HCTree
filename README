@@ -1,0 +1,17 @@
+C++ program compress that will be invoked with a command line of the form
+
+ ./compress infile outfile
+When run, this program will read the contents of the file named by its first
+command line argument, construct a Huffman code for the contents of that file, 
+and use that code to construct a compressed version which is written to a file
+named by the second command line argument. The input file can contain any data
+(not just ASCII characters) so it should be treated as a binary file. 
+
+ C++ program uncompress that will be invoked with a command line of the form
+
+./uncompress infile outfile
+When run, this program will read the contents of the file named by its first
+command line argument, which should be a file that has been created by the
+compress program. It will use the contents of that file to reconstruct the 
+original, uncompressed version, which is written to a file named by the
+second command line argument. 
